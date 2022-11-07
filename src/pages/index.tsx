@@ -3,6 +3,14 @@ import React from "react";
 import { PageProps, graphql } from "gatsby";
 import styled from "styled-components";
 import { Layout, SEO, Image } from "@/components";
+import MainCard from "@/components/MainCard";
+import MainCard2 from "@/components/MainCard2";
+import MainCard3 from "@/components/MainCard3";
+import MainCard4 from "@/components/MainCard4";
+import MainCard6 from "@/components/MainCard6";
+import MainCard7 from "@/components/MainCard7";
+import MainCard8 from "@/components/MainCard8";
+import MainCard9 from "@/components/MainCard9";
 
 type DataProps = {
 	site: {
@@ -10,30 +18,20 @@ type DataProps = {
 	};
 };
 
-const ImageContainer = styled.div`
-	max-width: 300px;
-	margin-bottom: 1.45rem;
-`;
+
 
 const Index: React.FC<PageProps<DataProps>> = ({ data, path }) => (
 	<Layout>
-		<SEO title="Using TypeScript" />
-		<h1 className="text-2xl font-bold">Gatsby supports TypeScript by default!</h1>
-		<p>
-			This means that you can create and write <em>.ts/.tsx</em> files for your pages, components etc. Please note that the <em>gatsby-*.js</em> files (like gatsby-node.js) currently don't support TypeScript yet.
-		</p>
-		<p>
-			For type checking you'll want to install <em>typescript</em> via npm and run <em>tsc --init</em> to create a <em>.tsconfig</em> file.
-		</p>
-		<p>
-			You're currently on the page "{path}" which was built on {data.site.buildTime}.
-		</p>
-		<p>
-			To learn more, head over to our <a href="https://www.gatsbyjs.com/docs/typescript/">documentation about TypeScript</a>.
-		</p>
-		<ImageContainer>
-			<Image />
-		</ImageContainer>
+		{/* <SEO title="Using TypeScript" /> */}
+		<MainCard/>
+		<MainCard2/>
+		<MainCard3/>
+		<MainCard4/>
+		<MainCard6/>
+		<MainCard7/>
+		<MainCard8/>
+		<MainCard9/>
+		
 	</Layout>
 );
 
