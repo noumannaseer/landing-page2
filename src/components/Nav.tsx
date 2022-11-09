@@ -1,9 +1,9 @@
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
 import React from "react";
 import navitem from "../images/png/google.png";
 import logo from "../images/png/logo.png";
 
-export const Header = ({ siteTitle }) => (
+export const Nav = ({ siteTitle }) => (
 	<>
 		<header className="text-gray-400 w-full bg-[#ffffff] body-font">
 			<div className="mx-auto flex justify-between p-5 md:flex-row items-center">

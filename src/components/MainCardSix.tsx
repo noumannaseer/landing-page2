@@ -3,7 +3,7 @@ import "./styleCSS.css";
 
 type Props = {};
 
-const MainCard = (props: Props) => {
+const MainCardSix = ({setopenComponent}) => {
 	return (
 		<div className="bg-mainCard">
 			<div className="pt-20">
@@ -22,11 +22,15 @@ const MainCard = (props: Props) => {
 					<input className="outline-none rounded-full font-sans text-lg px-4 sm:px-20 py-2 " type="text" placeholder="Your address" />
 				</div>
 				<div className="mt-5 mb-20">
-					<button className="bg-purple rounded-full font-sans text-lg	font-bold text-white px-12  py-3  sm:px-32 sm:py-4 mt-8">Next</button>
+					<button 
+					onClick={({ value = 7 }) => {
+						setopenComponent(value)
+					  }}
+					className="bg-purple rounded-full font-sans text-lg	font-bold text-white px-12  py-3  sm:px-32 sm:py-4 mt-8">Next</button>
 				</div>
 			</div>
 		</div>
 	);
 };
 
-export default MainCard;
+export default MainCardSix;

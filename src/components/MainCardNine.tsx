@@ -3,7 +3,7 @@ import "./styleCSS.css";
 
 type Props = {};
 
-const MainCard = (props: Props) => {
+const MainCardNine = (props: Props) => {
 	return (
 		<div className="bg-mainCard">
 			<div className="pt-20">
@@ -21,9 +21,9 @@ const MainCard = (props: Props) => {
 				<div className=" bg-white rounded-full border-2 ">
 					<input className="outline-none rounded-full font-sans text-lg px-4 sm:px-20 py-2 " type="text" placeholder="example@email.com" />
 				</div>
-				<div className="bg-gray-500">
-					<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" className="w-5 h-5" />
-					<label htmlFor="vehicle1" className="font-sans font-bold text-sm sm:text-base md:text-xl  text-center mt-10 ml-4">
+				<div className="py-8">
+					<input type="checkbox" id="id1" name="id1" value="" className="w-5 h-5 accent-pink-500" />
+					<label htmlFor="id1" className="font-sans font-bold text-sm sm:text-base md:text-xl  text-center mt-10 ml-4">
 						By clicking this button, you agree to and acknowledge <br />
 						Nuborrow's Terms of Use and Privacy Policy
 					</label>
@@ -37,4 +37,4 @@ const MainCard = (props: Props) => {
 	);
 };
 
-export default MainCard;
+export default MainCardNine;

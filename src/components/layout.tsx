@@ -7,7 +7,7 @@
 
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import { Header } from "./header";
+import { Nav } from "./Nav";
 import Footer from "./Footer";
 
 export const Layout = ({ children }) => {
@@ -23,7 +23,7 @@ export const Layout = ({ children }) => {
 
 	return (
 		<>
-			<Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+			<Nav siteTitle={data.site.siteMetadata?.title || `Title`} />
 			<div
 				style={{
 					margin: `0 auto`,
